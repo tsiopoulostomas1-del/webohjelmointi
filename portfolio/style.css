@@ -13,3 +13,34 @@ h5 {color: lightyellow;}
 h6 {color: lightyellow;}
 
 section {border: 4px solid lightblue; }
+
+a {
+    font-family:calibri; color: rgb(3, 2, 2); text-decoration: none;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+a:visited {
+    color: rgb(133, 133, 133)
+}
+
+button {
+    background-color: black; color: white;
+}
+
+button:hover {
+    color: lightblue;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #fff9c4;
+    }
+
+ul li:last-child,
+ol li:last-child {
+    font-style: italic;
+  }
