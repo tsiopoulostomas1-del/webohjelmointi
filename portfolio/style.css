@@ -1,16 +1,54 @@
-body {background-color: rgb(42, 184, 228); margin: 64px;}
+body {background-color: rgb(42, 184, 228); margin: 64px; font-family: "Instrument Sans", sans-serif;}
 
-h1 {color: lightyellow; font-size: 60px;}
+p {
+    font-family: "Instrument Sans", sans-serif;
+}
 
-h2 {color: lightyellow; font-size: 48px;}
+strong {
+    font-family: "Instrument Sans";
+}
 
-h3 {color: lightyellow; font-size: 32px;}
+article {
+    font-family: "Instrument Sans";
+}
 
-h4 {color: lightyellow; font-size: 18px;}
+article p {
+    font-family: "Instrument Sans";
+}
 
-h5 {color: lightyellow;}
+h1 {
+    font-family: "Fjalla One", sans-serif;
+    color: lightyellow; 
+    font-size: 60px;
+}
 
-h6 {color: lightyellow;}
+h2 {
+    font-family: "Fjalla One", sans-serif;
+    color: lightyellow; 
+    font-size: 48px;
+}
+
+h3 {
+    font-family: "Fjalla One", sans-serif;
+    color: lightyellow; 
+    font-size: 32px;
+}
+
+h4 {
+    font-family: "Fjalla One", sans-serif;
+    color: lightyellow; 
+    font-size: 18px;
+}
+
+h5 {
+    font-family: "Fjalla One", sans-serif;
+    color: lightyellow;
+}
+
+h6 {
+    font-family: "Fjalla One", sans-serif;
+    color: lightyellow;
+}
 
 section {border: 4px solid lightblue; }
 
@@ -44,3 +82,15 @@ ul li:last-child,
 ol li:last-child {
     font-style: italic;
   }
+
+@font-face {
+  font-family: "Fjalla One";
+  src: url("../fonts/FjallaOne-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../fonts/InstrumentSans-VariableFont_wdth\,wght.ttf");
+  font-weight: normal;
+}
