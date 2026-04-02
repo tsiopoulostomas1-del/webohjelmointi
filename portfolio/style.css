@@ -94,3 +94,34 @@ ol li:last-child {
   src: url("../fonts/InstrumentSans-VariableFont_wdth\,wght.ttf");
   font-weight: normal;
 }
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        'navigaatio navigaatio navigaatio'
+        'sivupalkki sisalto tyokalut'
+        'status status status';
+    grid-template-columns: 14em 10fr 1fr;
+
+    grid-template-rows: 8em auto 6em;
+}
+
+section {
+    grid-area: tyokalut;
+}
+nav {
+    background-color: black;
+    grid-area: sivupalkki;
+}
+main {
+    grid-area: sisalto;
+}
+aside {
+    background-color: gray;
+    grid-area: navigaatio;
+}
+footer {
+    grid-area: status;
+}
