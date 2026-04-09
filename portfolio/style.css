@@ -1,4 +1,19 @@
-body {background-color: rgb(42, 184, 228); margin: 64px; font-family: "Instrument Sans", sans-serif;}
+body {
+    background-color: rgb(42, 184, 228); 
+    margin: 64px; font-family: "Instrument Sans", sans-serif; 
+    max-width: 1000px; margin: 0 auto;
+
+
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        'navigaatio navigaatio navigaatio'
+        'sivupalkki sisalto tyokalut'
+        'status status status';
+    grid-template-columns: 14em 10fr 0fr;
+    grid-template-rows: 8em auto 6em;
+}
 
 p {
     font-family: "Instrument Sans", sans-serif;
@@ -17,12 +32,16 @@ article p {
 }
 
 h1 {
+    position: relative;
+    bottom: 65px;
     font-family: "Fjalla One", sans-serif;
     color: lightyellow; 
     font-size: 60px;
 }
 
 h2 {
+    position: relative;
+    right: 20px;
     font-family: "Fjalla One", sans-serif;
     color: lightyellow; 
     font-size: 48px;
@@ -95,33 +114,40 @@ ol li:last-child {
   font-weight: normal;
 }
 
-body {
-    margin: 0;
-    height: 100vh;
-    display: grid;
-    grid-template-areas:
-        'navigaatio navigaatio navigaatio'
-        'sivupalkki sisalto tyokalut'
-        'status status status';
-    grid-template-columns: 14em 10fr 1fr;
-
-    grid-template-rows: 8em auto 6em;
-}
-
 section {
     grid-area: tyokalut;
+    padding: 1em;
 }
 nav {
     background-color: black;
     grid-area: sivupalkki;
+    padding: 3em;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 2em;
+}
+
+nav h2 {
+    display: block;
+    margin-bottom: 2em;
 }
 main {
     grid-area: sisalto;
+
+    margin: 1em;
+    padding: 3em;
+    text-align: left;
 }
 aside {
     background-color: gray;
     grid-area: navigaatio;
+    padding: 3em 1em;
 }
 footer {
     grid-area: status;
+
+    text-align: center;
+    padding: 3em;
 }
