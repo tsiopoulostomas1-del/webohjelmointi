@@ -1,6 +1,6 @@
 body {
     background-image: url('../images/coolbg.jpg');
-    background-size: auto 170%;
+    background-size: auto 300%;
     background-repeat: fixed;
     background-color: rgb(42, 184, 228); 
     margin: 64px; font-family: "Instrument Sans", sans-serif; 
@@ -37,6 +37,11 @@ body {
 
 p {
     font-family: "Instrument Sans", sans-serif;
+    color: white;
+}
+
+td {
+    color: white;
 }
 
 strong {
