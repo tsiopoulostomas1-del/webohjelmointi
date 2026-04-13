@@ -19,3 +19,26 @@ function jako() {
     alert("Vastaus: 5");
 }
 
+function laskin_summa() {
+  let eka = Number(document.getElementById("numero1").value)
+  let toka = Number(document.getElementById("numero2").value)
+  document.getElementById("tulos").innerText = summa(eka, toka)
+}
+
+function laskin_vahennys() {
+  let eka = Number(document.getElementById("numero1").value)
+  let toka = Number(document.getElementById("numero2").value)
+  document.getElementById("tulos").innerText = vahennys(eka, toka)
+}
+
+function laskin_kerto() {
+  let eka = Number(document.getElementById("numero1").value)
+  let toka = Number(document.getElementById("numero2").value)
+  document.getElementById("tulos").innerText = kerto(eka, toka)
+}
+
+function laskin_jako() {
+  let eka = Number(document.getElementById("numero1").value)
+  let toka = Number(document.getElementById("numero2").value)
+  document.getElementById("tulos").innerText = jako(eka, toka)
+}
