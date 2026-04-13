@@ -181,3 +181,54 @@ footer {
     text-align: center;
     padding: 3em;
 }
+
+@media screen and (max-width: 1280px) {
+  nav {
+    text-orientation: landscape;
+  }
+
+  body {
+    margin-left:  64px;
+    margin-right:  64px;
+  }
+  
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    position: relative;
+    width: 200px;
+    height: 50px;
+  }
+
+  body {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+}
+
