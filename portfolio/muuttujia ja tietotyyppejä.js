@@ -4,41 +4,45 @@ c = 7;
 d = 15;
 
 function summa() {
-    alert("Vastaus: 8");
+    alert(a + b);
 }
 
 function vahennys() {
-    alert("Vastaus: -2");
+    alert(b - c);
 }
 
 function kerto() {
-    alert("Vastaus: 105");
+    alert(c * d);
 }
 
 function jako() {
-    alert("Vastaus: 5");
+    alert(d / a);
 }
 
 function laskin_summa() {
   let eka = Number(document.getElementById("numero1").value)
   let toka = Number(document.getElementById("numero2").value)
-  document.getElementById("tulos").innerText = summa(eka, toka)
+  lasku = eka + toka
+  alert(lasku)
 }
 
 function laskin_vahennys() {
   let eka = Number(document.getElementById("numero1").value)
   let toka = Number(document.getElementById("numero2").value)
-  document.getElementById("tulos").innerText = vahennys(eka, toka)
+  lasku = eka - toka
+  alert(lasku)
 }
 
 function laskin_kerto() {
   let eka = Number(document.getElementById("numero1").value)
   let toka = Number(document.getElementById("numero2").value)
-  document.getElementById("tulos").innerText = kerto(eka, toka)
+  lasku = eka * toka
+  alert(lasku)
 }
 
 function laskin_jako() {
   let eka = Number(document.getElementById("numero1").value)
   let toka = Number(document.getElementById("numero2").value)
-  document.getElementById("tulos").innerText = jako(eka, toka)
+  lasku = eka / toka
+  alert(lasku)
 }
