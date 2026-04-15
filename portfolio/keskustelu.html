@@ -113,15 +113,17 @@
     
     <form style="font-family: calibri; color: white;">
 <p>Tekstikenttä</p>
+
 <textarea name="" id=""></textarea>
+
 <p>Sähköposti</p>
-<input type="email">
+<input type="email" name ="email">
+
 <p>Syntymäpäivä</p>
-<input type="date">
+<input type="date" name="syntyma">
 <p></p>
-<button>Lähetä viesti</button>
-<p>
-</p>
+<button onclick="handleClick(event)">Lähetä viesti</button>
+<p></p>
 <label>
     <input type="checkbox">
     keskustelun annettuja tietoja saa käyttää markkinoinnissa 
