@@ -1,11 +1,17 @@
-console.log("CV-Sivu avattu!") 
-
 function handleClick(e) {
     e.preventDefault();
-    let email = e.target.form.username.value;
-    console.log(username);
-    let syntyma = e.target.form.syntyma.value;
-    console.log(username)
-    
-}
 
+    const form = e.target.closest("form");
+
+    let text = form.text.value;
+    let email = form.email.value;
+    let syntyma = form.syntyma.value;
+    let tyyppi = form.tyyppi.value;
+    let checkbox = form.checkbox.value;
+
+    console.log(text);
+    console.log(email);
+    console.log(syntyma);
+    console.log(tyyppi);
+    console.log(checkbox);
+}

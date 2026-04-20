@@ -111,10 +111,18 @@
 <details>
     <summary style="font-family:calibri; font-size: 18px; background-color: blue; max-width: 120px; border-radius: 10px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); margin: 1rem auto; color: white;"><strong>Kommentoi</strong></summary>
     
-    <form style="font-family: calibri; color: white;">
+<form style="font-family: calibri; color: white;">
 <p>Tekstikenttä</p>
 
-<textarea name="" id=""></textarea>
+<label for="tyyppi">Valitse tyyppi:</label>
+<select id="tyyppi" name="tyyppi">
+    <option value="kysymys">Kysymys</option>
+    <option value="kommentti">Kommentti</option>
+</select>
+
+<p></p>
+
+<textarea name="text" id="text"></textarea>
 
 <p>Sähköposti</p>
 <input type="email" name ="email">
@@ -122,12 +130,11 @@
 <p>Syntymäpäivä</p>
 <input type="date" name="syntyma">
 <p></p>
-<button onclick="handleClick(event)">Lähetä viesti</button>
+<button type="submit" onclick="handleClick(event)">Lähetä viesti</button>
 <p></p>
-<label>
-    <input type="checkbox">
-    keskustelun annettuja tietoja saa käyttää markkinoinnissa 
-</label>
+
+<input id="usage" name="checkbox" type="checkbox">keskustelun annettuja tietoja saa käyttää markkinoinnissa</input> 
+
 
 </form>
 
