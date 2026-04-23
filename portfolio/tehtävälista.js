@@ -1,28 +1,29 @@
-
-var lista = ["Tehtävä 1", "Tehtävä 2"];
-
-window.onload = function() {
-    paivitaLista();
-};
+let lista = ["Tehtävä 1", "Tehtävä 2"];
 
 function paivitaLista() {
-     ul = document.getElementById("tehtavalista");
-    ul.innerHTML = ""; 
+    const ul = document.getElementById("tehtavalista");
+    ul.innerHTML = "";
 
-    lista.forEach(function(item) {
+    for (const tehtava of lista) {
         const li = document.createElement("li");
-        li.textContent = item;
+        li.textContent = tehtava;
         ul.appendChild(li);
-    });
+    }
 }
 
-function lisaaTehtava() {
-    const input = document.getElementById("uusiTehtava");
-    const arvo = input.value.trim();
+function lisaa() {
+    const teksti = document.getElementById("uusiTehtava").value.trim();
+    const maara = Number(document.getElementById("maara").value);
 
-    if (arvo === "") return; 
+    if (teksti === "" || maara < 1) return;
 
-    lista.push(arvo);
-    input.value = ""; 
-    paivitaLista();   
+    for (let i = 0; i < maara; i++) {
+        lista.push(teksti);
+    }
+
+    document.getElementById("uusiTehtava").value = "";
+    paivitaLista();
 }
+
+paivitaLista();
+
