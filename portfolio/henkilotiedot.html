@@ -16,18 +16,39 @@
     </aside>
     
 <main>
- <table style="color: white;">
-    <thead>
-        <tr>
-            <th>Nimi</th>
-            <th>Ikä</th>
-            <th>Työ</th>
-            <th>Ajokortti</th>
-        </tr>
-    </thead>
-    <tbody id="rivit">
-    </tbody>
-   </table>
+    <table style="color: white;">
+        <thead>
+            <tr>
+                <th>Nimi</th>
+                <th>Ikä</th>
+                <th>Työ</th>
+                <th>Ajokortti</th>
+            </tr>
+        </thead>
+        <tbody id="rivit">
+        </tbody>
+    </table>
+
+        <!-- UUSI LOMAKE TAULUKON ALLE -->
+        <form id="lomake" style="margin-top: 20px; color: white;">
+        <h3>Lisää uusi henkilö</h3>
+
+        <label>Nimi:</label><br>
+        <input type="text" id="nimi"><br><br>
+
+        <label>Ikä:</label><br>
+        <input type="number" id="ika"><br><br>
+
+        <label>Työ:</label><br>
+        <input type="text" id="tyo"><br><br>
+
+        <label>
+            <input type="checkbox" id="ajokortti">
+            Ajokortti
+        </label><br><br>
+
+        <button type="button" id="laheta">Lähetä</button>
+    </form>
 </main>
 
 <nav>
