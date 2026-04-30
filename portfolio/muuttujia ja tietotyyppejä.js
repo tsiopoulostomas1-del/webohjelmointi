@@ -46,3 +46,36 @@ function laskin_jako() {
   lasku = eka / toka
   alert(lasku)
 }
+
+function naytaAika() {
+    const nyt = new Date();
+
+    // Päivämäärä muodossa 9.5.2025
+    const paiva = nyt.getDate();
+    const kk = nyt.getMonth() + 1;
+    const vuosi = nyt.getFullYear();
+
+    // Aika muodossa 10.15.45
+    const tunnit = nyt.getHours().toString().padStart(2, "0");
+    const minuutit = nyt.getMinutes().toString().padStart(2, "0");
+    const sekunnit = nyt.getSeconds().toString().padStart(2, "0");
+
+    // Viikonpäivät suomeksi
+    const viikonpaivat = [
+        "sunnuntai", "maanantai", "tiistai", "keskiviikko",
+        "torstai", "perjantai", "lauantai"
+    ];
+
+    // Kuukaudet suomeksi
+    const kuukaudet = [
+        "tammikuu", "helmikuu", "maaliskuu", "huhtikuu",
+        "toukokuu", "kesäkuu", "heinäkuu", "elokuu",
+        "syyskuu", "lokakuu", "marraskuu", "joulukuu"
+    ];
+
+    document.getElementById("paivamaara").innerText = `${paiva}.${kk}.${vuosi}`;
+    document.getElementById("aika").innerText = `${tunnit}.${minuutit}.${sekunnit}`;
+    document.getElementById("paivaJaAika").innerText = `${paiva}.${kk}.${vuosi} klo ${tunnit}.${minuutit}.${sekunnit}`;
+    document.getElementById("viikonpaiva").innerText = viikonpaivat[nyt.getDay()];
+    document.getElementById("kuukausi").innerText = kuukaudet[nyt.getMonth()];
+}
