@@ -79,3 +79,11 @@ function naytaAika() {
     document.getElementById("viikonpaiva").innerText = viikonpaivat[nyt.getDay()];
     document.getElementById("kuukausi").innerText = kuukaudet[nyt.getMonth()];
 }
+
+var Veijo = new Set(['luku', 'poisto']);
+var Elvira = new Set(['luku', 'kirjoitus', 'muokkaus']);
+var Mehdi = new Set(['luku', 'muokkaus', 'poisto']);
+var Tuuli = new Set(['kirjoitus', 'poisto']);
+
+
+
