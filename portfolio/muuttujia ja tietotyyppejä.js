@@ -85,5 +85,87 @@ var Elvira = new Set(['luku', 'kirjoitus', 'muokkaus']);
 var Mehdi = new Set(['luku', 'muokkaus', 'poisto']);
 var Tuuli = new Set(['kirjoitus', 'poisto']);
 
+const ulV = document.getElementById("v");
+
+ulV.innerHTML = "";
+
+Veijo.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    ulV.appendChild(li);
+})
+
+const ulE = document.getElementById("e");
+
+ulE.innerHTML = "";
+
+Elvira.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    ulE.appendChild(li);
+})
+
+const ulM = document.getElementById("m");
+
+ulM.innerHTML = "";
+
+Mehdi.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    ulM.appendChild(li);
+})
+
+const ulT = document.getElementById("t");
+
+ulT.innerHTML = "";
+
+Tuuli.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    ulT.appendChild(li);
+})
+
+const ulVT = document.getElementById("veijotuuli");
+
+ulVT.innerHTML = "";
+
+const VeijoTuuli = new Set([...Veijo, ...Tuuli]);
+
+VeijoTuuli.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    ulVT.appendChild(li);
+});
+
+const ulME = document.getElementById("mehdielvira");
+
+ulME.innerHTML = "";
+
+const MehdiElvira = new Set([...Mehdi].filter(item => Elvira.has(item)));
+
+MehdiElvira.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    ulME.appendChild(li);
+});
+
+const ulET = document.getElementById("elviratuuli");
+
+ulET.innerHTML = "";
+
+const ElviraTuuli = new Set([
+    ...[...Elvira].filter(item => !Tuuli.has(item)),
+    ...[...Tuuli].filter(item => !Elvira.has(item))
+]);
+
+ElviraTuuli.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    ulET.appendChild(li);
+});
+
+
+
+
 
 
