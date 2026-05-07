@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="menesivulle, omatsivut, sisältöä">
+    <meta name="author" content="Tomas Tsiopoulos">
+    <meta name="description" content="Parhain weppisivu">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../icon.png" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>Merkkijonot</title>
+    <script src="merkkijonot.js" defer></script>
+</head>
+<body style="text-align: center;">
+
+    <aside>
+        <h1 style="font-family: calibri; font-size: 50px;">Merkkijonot</h1>
+    </aside>
+
+    <main style="color:white;">
+        <h2>Poimi kirjain</h2>
+        <input id="text"  type="text" placeholder="Kirjain"></input>
+        <input id="number" type="number" placeholder="Numero"></input>
+        <button onclick="poimi_kirjain()" style="color: white; border-radius: 10px; font-size: 16px; font-family: helvetica;">Näytä</button>
+        <div>Vastaus:</div>
+        <div id="teksti"></div>
+
+        <h2>Löydä Indeksi</h2>
+        <input id="tekstiosio"  type="text" placeholder="Kirjoita jotain tekstiä">
+        <input id="tekstiosio2"  type="text" placeholder="Kirjoita jotain tekstiä">
+        <button onclick="loyda_indeksi()" style="color: white; border-radius: 10px; font-size: 16px; font-family: helvetica;">Näytä</button>
+        <div>Vastaus:</div>
+        <div id="tekstia"></div>
+
+        <h2>Leikkaa merkkijono</h2>
+        <input id="tekstikentta" type="text" placeholder="Kirjoita jotain tekstiä">
+        <input id="numerokentta" type="number" placeholder="Numero">
+        <input id="numerokentta2" type="number" placeholder="Numero">
+        <button onclick="leikkaa_merkkijono()" style="color: white; border-radius: 10px; font-size: 16px; font-family: helvetica;">Näytä</button>
+        <div>Vastaus:</div>
+        <div id="tekstiataas"></div>
+
+        <h2>Etsi ja korvaa</h2>
+        <input id="ykkos" type="text" placeholder="Kirjoita jotain tekstiä">
+        <input id="kakkos" type="text" placeholder="Kirjoita jotain tekstiä">
+        <input id="kolmos" type="text" placeholder="Kirjoita jotain tekstiä">
+        <button onclick="etsijakorvaa()" style="color: white; border-radius: 10px; font-size: 16px; font-family: helvetica;">Näytä</button>
+        <div>Vastaus:</div>
+        <div id="tekstiataaskerran"></div>
+
+        <h2>Poikki ja pinoon</h2>
+        <input id="ykkonen" type="text" placeholder="Kirjoita jotain tekstiä">
+        <input id="kakkonen" type="text" placeholder="Kirjoita jotain tekstiä">
+        <button onclick="poikkijapinoon()" style="color: white; border-radius: 10px; font-size: 16px; font-family: helvetica;">Näytä</button>
+        <div>Vastaus:</div>
+        <ul id="tekstiataaskerran1"></ul>
+
+    </main>
+    
+    <nav>
+        <h3>Navigaatio</h3>
+        <a style="font-family: calibri;" href="index.html"><strong>/ Takaisin pääsivulle /</strong> </a>
+    </nav>
+        
+</body>
+</html>
