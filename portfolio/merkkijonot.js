@@ -52,10 +52,17 @@ function etsijakorvaa() {
 // 5
 
 function poikkijapinoon() {
-    const text = document.getElementById("ykkönen").value;
+    const text = document.getElementById("ykkonen").value;
     const text2 = document.getElementById("kakkonen").value;
 
     let split = text.split(text2);
 
-    document.getElementById("tekstiataaskerran1").innerHTML = split;
+    const ul = document.getElementById("tekstiataaskerran1");
+    ul.innerHTML = ""; 
+
+    split.forEach(pala => {
+        const li = document.createElement("li");
+        li.textContent = pala;
+        ul.appendChild(li);
+    });
 }
