@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="keywords" content="menesivulle, omatsivut, sisältöä">
+        <meta name="author" content="Tomas Tsiopoulos">
+        <meta name="description" content="Parhain weppisivu">
+        <title>Taulukot</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="../icon.png" type="image/jpg">
+        <link rel="stylesheet" href="style.css">
+        <script src="taulukot.js" defer></script>
+    </head>
+    <body style="text-align: center;">
+
+        <aside>
+            <h1>Taulukot</h1>
+        </aside>
+        
+        <main>
+            <h2>Poimi elementti</h2>
+            <input id="numero" type="number" placeholder="Anna numero">
+            <button onclick="poimi_elementti()">Näytä</button>
+            <p>Vastaus:</p>
+            <div style="color: white;" id="teksti" ></div>
+
+            <h2>Löydä indeksi</h2>
+            <input id="tekstia" type="text" placeholder="Kirjoita jotain">
+            <button onclick="loyda_indeksi()" >Näytä</button>
+            <p>Vastaus:</p>
+            <div style="color: white;" id="vastaus"></div>
+
+            <h2>Leikkaa taulukko</h2>
+            <input id="tekstialisaa" type="number" placeholder="Anna numero">
+            <input id="tekstialisaa2" type="number" placeholder="Anna toinen numero">
+            <button onclick="leikkaa_taulukko()" >Näytä</button>
+            <p>Vastaus:</p>
+            <ul style="color: white;" id="vastauksia"></ul>
+
+            <h2>Järjestä</h2>
+            <button onclick="tulostaTekstit()">Tulosta tekstit</button><br>
+            <button onclick="jarjestaTekstit()">Järjestä tekstit</button><br>
+            <button onclick="kaannaTekstit()">Käännä tekstien järjestys</button><br>
+
+            <button onclick="tulostaNumerot()">Tulosta numerot</button><br>
+            <button onclick="jarjestaNumerot()">Järjestä numerot</button><br>
+            <button onclick="kaannaNumerot()">Käännä numeroiden järjestys</button><br>
+            <p>Vastaus:</p>
+            <ul style="color:white;" id="vastaukset"></ul>
+
+            <h2>Suodata</h2>
+            <input id="numeroita" type="number" placeholder="Anna numero">
+            <button onclick="suodataTulosta()">Tulosta numerot</button>
+            <button onclick="suodataPienemmat()">Valitse pienemmät</button>
+            <button onclick="suodataSuuremmat()">Valitse suuremmat</button>
+            <p>Vastaus:</p>
+            <ul style="color:white;" id="tulos"></ul>
+        </main>
+
+        <nav>
+            <a href="index.html"><strong>/ Takaisin pääsivulle / </strong></a>
+        </nav>
+
+    </body>
+</html>
